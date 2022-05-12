@@ -1,8 +1,8 @@
-import enum
 from operator import index
 from random import randint
-from xml.dom.expatbuilder import theDOMImplementation
-from xmlrpc.client import Marshaller
+
+from numpy import mat
+
 n = 3
 print("Дана матрица случайных чисел:")
 Matrica = [[randint(1,40) for i in range(n)] for item in range(n)]
@@ -36,3 +36,8 @@ for item in Matrica:
     Matrica[2][0] = 0
     Matrica[2][1] = 0
 print(Matrica)
+
+matrix_a = [[randint(1,100) for i in range(n)] for item in range(n)]
+matrix_b = [[randint(1,65) for i in range(n)] for item in range(n)]
+print(matrix_a)
+print(matrix_b)
