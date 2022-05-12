@@ -18,7 +18,6 @@ print('Сумма всех элементов - ',Sum_of_elements)
 sum_of_row = []
 for item in Matrica:
     sum_of_row.append(sum(item))
-print(sum_of_row)
 print("Индекс ряда с максимальной суммой элементов - ", sum_of_row.index(max(sum_of_row)))
 one_col = [Matrica[0][0],Matrica[1][0],Matrica[2][0]]
 second_col = [Matrica[0][1],Matrica[1][1],Matrica[2][1]]
