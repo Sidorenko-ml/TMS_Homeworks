@@ -24,3 +24,5 @@ second_col = [Matrica[0][1],Matrica[1][1],Matrica[2][1]]
 three_col = [Matrica[0][2],Matrica[1][2],Matrica[2][2]]
 column = [sum(one_col),sum(second_col),sum(three_col)]
 print("Индекс колонок с максимальной суммой элементов - ", column.index(max(column)))
+print("Индекс ряда с минимальной суммой элементов - ", sum_of_row.index(min(sum_of_row)))
+print("Индекс колонок с минимальной суммой элементов - ", column.index(min(column)))
