@@ -31,3 +31,8 @@ for item in Matrica:
     Matrica[0][2] = 0
     Matrica[1][2] = 0
 print(Matrica)
+for item in Matrica:
+    Matrica[1][0] = 0
+    Matrica[2][0] = 0
+    Matrica[2][1] = 0
+print(Matrica)
