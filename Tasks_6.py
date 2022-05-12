@@ -9,3 +9,5 @@ for item in Matrica:
         MaxElem.append(i)
 print("Максимальный элемент матрицы - ",max(MaxElem))
 print("Минимальный элемент матрицы - ",min(MaxElem))
+Sum_of_elements = sum(MaxElem)
+print('Сумма всех элементов - ',Sum_of_elements)
