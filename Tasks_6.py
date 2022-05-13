@@ -41,3 +41,9 @@ matrix_a = [[randint(1,100) for i in range(n)] for item in range(n)]
 matrix_b = [[randint(1,65) for i in range(n)] for item in range(n)]
 print(matrix_a)
 print(matrix_b)
+
+matrix_c = [[0,0,0],[0,0,0],[0,0,0]]
+for i in range(len(matrix_a)):
+    for j in range(len(matrix_a[0])):
+        matrix_c[i][j]=matrix_a[i][j]+matrix_b[i][j]
+print(matrix_c)
