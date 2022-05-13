@@ -1,7 +1,7 @@
 from operator import index
 from random import randint
-
 from numpy import mat
+import numpy as np
 
 n = 3
 print("Дана матрица случайных чисел:")
@@ -39,8 +39,8 @@ print(Matrica)
 
 matrix_a = [[randint(1,100) for i in range(n)] for item in range(n)]
 matrix_b = [[randint(1,65) for i in range(n)] for item in range(n)]
-print(matrix_a)
-print(matrix_b)
+print("Matrix_a: ",matrix_a)
+print("Matrix_b: ",matrix_b)
 
 matrix_c = [[0,0,0],[0,0,0],[0,0,0]]
 for i in range(len(matrix_a)):
@@ -53,3 +53,6 @@ for i in range(len(matrix_a)):
     for j in range(len(matrix_a[0])):
         matrix_d[i][j]=matrix_a[i][j]-matrix_b[i][j]
 print("Матрица, полученная c помощью разницы созданых выше matrix_a и matrix_b: ",matrix_d)
+g = int(input('Введите число с клавиатуры, на которое будет умножена matrix_a - '))
+matrix_g = np.dot(g, matrix_a)
+print(matrix_g)
