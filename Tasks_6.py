@@ -46,4 +46,10 @@ matrix_c = [[0,0,0],[0,0,0],[0,0,0]]
 for i in range(len(matrix_a)):
     for j in range(len(matrix_a[0])):
         matrix_c[i][j]=matrix_a[i][j]+matrix_b[i][j]
-print(matrix_c)
+print("Матрица, полученная сложением созданых выше matrix_a и matrix_b: ",matrix_c)
+
+matrix_d = [[0,0,0],[0,0,0],[0,0,0]]
+for i in range(len(matrix_a)):
+    for j in range(len(matrix_a[0])):
+        matrix_d[i][j]=matrix_a[i][j]-matrix_b[i][j]
+print("Матрица, полученная c помощью разницы созданых выше matrix_a и matrix_b: ",matrix_d)
