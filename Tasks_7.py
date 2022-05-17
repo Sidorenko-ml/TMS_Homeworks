@@ -121,7 +121,7 @@ def ltr_pnt(x):
     Ch = x * 1.7598
     if (Ch % 10) == 1:    
         print(f'{x} л = {Ch} пинта')
-    if 2 <= (Ch % 10) <= 4:    
+    if 1 < (Ch % 10) <= 4:    
         print(f'{x} л = {Ch} пинты')
     if (Ch % 10) >= 5:    
         print(f'{x} л = {Ch} пинт')
