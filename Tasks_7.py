@@ -57,6 +57,8 @@ def km_mile(x):
 
 def ft_kg(x):
     Ch = x * 0.4536
+    if (x % 10) == 0:    
+        print(f'{x} фунтов = {Ch} кг')
     if (x % 10) == 1:    
         print(f'{x} фунт = {Ch} кг')
     if 1 < (x % 10) <= 4:    
